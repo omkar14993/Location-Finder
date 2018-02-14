@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Google GeoLocation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/styles/styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgdv5OEWtt413ixieNNTITE_Ic01C2VbM&callback=initMap">
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center display-3">Geolocation Finder.</h1>
+        <div id="map"></div>
+        <form id="location-form">
+            <div class="form-group">
+                <input type="text" id="location-input" class="form-control form-control-lg shadow" placeholder="Enter Location Here" required><br>
+                <button class="btn btn-primary btn-block btn-lg">Submit</button>
+            </div>
+        </form>
+        <div id="place" class="shadow"></div>
+        <div id="area" class="shadow"></div>
+        <div id="latlng" class="shadow"></div>
+    </div>
+    <script src="./assets/script/script.js"></script>
+
+</body>
+
+</html>
