@@ -64,4 +64,6 @@ function initMap(horiz, vert) {
         position: { lat: horiz, lng: vert },
         map: map
     });
+
+    console.log("Hello");
 }
